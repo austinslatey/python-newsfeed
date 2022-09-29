@@ -28,5 +28,6 @@ class User(Base):
   
   def verify_password(self, password):
     return bcrypt.checkpw(
-      password.endcode('utf8')
+      password.encode('utf8'),
+      self.password.encode('utf-8')
     )
