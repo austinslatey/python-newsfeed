@@ -19,7 +19,6 @@
   a CMS-style blog site similar to a Wordpress site.
 
   ## Deployment 
-  [https://python-newz-feed.onrender.com](https://python-newz-feed.onrender.com)
   ![Screenshot](assets/Screenshot%202022-09-28%20204202.jpg)  
  
   
