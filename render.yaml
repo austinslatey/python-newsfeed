@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: python-newsfeed
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn -w 4 'app:create_app()' -t 120"
+    envVars:
+      - key: DB_URL
+        value: "mysql+pymysql://root:password@localhost/python_news_db"
